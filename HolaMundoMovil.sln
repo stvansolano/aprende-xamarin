@@ -7,7 +7,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaMundoMovil.Android", "H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaMundoMovil.iOS", "HolaMundoMovil\HolaMundoMovil.iOS\HolaMundoMovil.iOS.csproj", "{B5240BA5-845B-4D47-8836-E2B71C9930E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaMundoMovil", "HolaMundoMovil\HolaMundoMovil\HolaMundoMovil.csproj", "{38E4A724-EC1D-4BA9-95E2-E23AD271B270}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolaMundoMovil", "HolaMundoMovil\HolaMundoMovil\HolaMundoMovil.csproj", "{38E4A724-EC1D-4BA9-95E2-E23AD271B270}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Materiales", "Materiales", "{0AEBDF97-4A48-4E70-AB50-6E692E66B6AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp-basico", "csharp-basico", "{B595D459-2A84-4C59-8B91-3A309DA909EF}"
+	ProjectSection(SolutionItems) = preProject
+		Materiales\c-sharp-basico\Hello, World!.md = Materiales\c-sharp-basico\Hello, World!.md
+		Materiales\c-sharp-basico\Variables and Types.md = Materiales\c-sharp-basico\Variables and Types.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csharp_basico", "csharp_basico\csharp_basico.csproj", "{247F85AB-55E5-428F-8516-B5CED443104C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -133,9 +143,37 @@ Global
 		{38E4A724-EC1D-4BA9-95E2-E23AD271B270}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{38E4A724-EC1D-4BA9-95E2-E23AD271B270}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{38E4A724-EC1D-4BA9-95E2-E23AD271B270}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Ad-Hoc|Any CPU.ActiveCfg = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Ad-Hoc|Any CPU.Build.0 = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.AppStore|Any CPU.ActiveCfg = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.AppStore|Any CPU.Build.0 = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.AppStore|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.AppStore|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Release|iPhone.Build.0 = Release|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{247F85AB-55E5-428F-8516-B5CED443104C}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B595D459-2A84-4C59-8B91-3A309DA909EF} = {0AEBDF97-4A48-4E70-AB50-6E692E66B6AD}
+		{247F85AB-55E5-428F-8516-B5CED443104C} = {0AEBDF97-4A48-4E70-AB50-6E692E66B6AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {53447172-7711-462D-8E64-7E9109551C9D}
