@@ -1,29 +1,29 @@
 Tutorial
 --------
 
-C# is a statically-typed language. Therefore, we must define the types of variables before using them.
+C# es un lenguaje estáticamente tipado. Por lo tanto, debemos definir los tipos de variables antes de usarlas.
 
-To define a variable in C#, we use the following syntax, which is similar to C / Java:
+Para definir una variable en C #, usamos la siguiente sintaxis, que es similar a C / Java:
 
-    int myInt = 1;
-    float myFloat = 1f;
-    bool myBoolean = true;
-    char myChar = 'a';
-    double myDouble = 1.75;
+    int myInt = 1;
+    float myFloat = 1f;
+    bool myBoolean = true;
+    char myChar = 'a';
+    doble myDouble = 1.75;
 
-Notice that defining a floating point number requires an explicit `f` letter after the number.
+Notese que la definición de un número de punto flotante requiere una letra `f` explícita después del número.
 
-C# supports type inference - which means that you don't always have to explicitly specify a type - you
-can let the compiler try and understand the type of variable automatically. However, once the type of variable
-has been determined, it cannot be assigned a different type.
+C# admite la inferencia de tipos, lo que significa que no siempre tiene que especificar explícitamente un tipo.
+Puede dejar que el compilador intente y entienda el tipo de variable automáticamente. Sin embargo, una vez que el tipo de variable
+Se ha determinado, no se le puede asignar un tipo diferente.
 
     var x = 1;
     var y = 2;
-    var sum = x + y;    // sum will also be defined as an integer
+    var suma = x + y;    // suma sera definida tambien integer o entero
 
 ### Enums
 
-Enums are integers that should be used when an integer is used to specify an option from a fixed amount of options.
+Las enumeraciones son un tipo especial que utilizan números enteros para representar un elemento como parte de un subconjunto.
 
     public enum CarType
     {
@@ -41,16 +41,16 @@ Enums are integers that should be used when an integer is used to specify an opt
     }
 
 
-Exercise
+Ejercicio
 --------
 
-Define three variables:
+Definir tres variables:
 
-* A string named `productName` equal to `TV`.
-* An integer named `productYear` equal to 2012.
-* A float named `productPrice` equal to 279.99f.
+* Un string o cadena llamado `nombreProducto` igual a `TV`.
+* Un integer o entero llamado `annoProducto` igual a 2019.
+* Un float o flotante llamado `precioProducto` igual a 279.99f.
 
-Tutorial Code
+Codigo del Tutorial
 -------------
 
     using System;
@@ -62,20 +62,20 @@ Tutorial Code
           // write your code here
 
           // test code
-          Console.WriteLine("productName: " + productName);
-          Console.WriteLine("productYear: " + productYear);
-          Console.WriteLine("productPrice: " + productPrice);
+          Console.WriteLine("nombreProducto: " + productName);
+          Console.WriteLine("annoProducto: " + productYear);
+          Console.WriteLine("precioProducto: " + productPrice);
 
        }
     }
 
 
-Expected Output
+Salida Esperada
 ---------------
 
-    productName: TV
-    productYear: 2012
-    productPrice: 279.99
+    nombreProducto: TV
+    annoProducto: 2012
+    precioProducto: 279.99
 
 Solution
 --------
@@ -87,14 +87,14 @@ Solution
        public static void Main()
        {
           // write your code here
-          string productName = "TV";
+          string nombreProducto = "TV";
           int productYear = 2012;
-          float productPrice = 279.99f;
+          float precioProducto = 279.99f;
 
           // test code
-          Console.WriteLine("productName: " + productName);
-          Console.WriteLine("productYear: " + productYear);
-          Console.WriteLine("productPrice: " + productPrice);
+          Console.WriteLine("nombreProducto: " + nombreProducto);
+          Console.WriteLine("annoProducto: " + annoProducto);
+          Console.WriteLine("precioProducto: " + precioProducto);
        }
     }
 
