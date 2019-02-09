@@ -10,6 +10,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolaMundoMovil", "HolaMundoMovil\HolaMundoMovil\HolaMundoMovil.csproj", "{38E4A724-EC1D-4BA9-95E2-E23AD271B270}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Materiales", "Materiales", "{0AEBDF97-4A48-4E70-AB50-6E692E66B6AD}"
+	ProjectSection(SolutionItems) = preProject
+		Materiales\Sesion01.md = Materiales\Sesion01.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp-basico", "csharp-basico", "{B595D459-2A84-4C59-8B91-3A309DA909EF}"
 	ProjectSection(SolutionItems) = preProject
