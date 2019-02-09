@@ -11,7 +11,7 @@ namespace HolaMundoMovil
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage()) { Title = "Hola, mundo!" };
         }
 
         protected override void OnStart()

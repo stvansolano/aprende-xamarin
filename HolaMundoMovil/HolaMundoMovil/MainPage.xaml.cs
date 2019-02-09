@@ -12,6 +12,12 @@ namespace HolaMundoMovil
         public MainPage()
         {
             InitializeComponent();
+
+            button1.Clicked += (s, e) => {
+
+                DisplayAlert("Bienvenido", "Hola, mundo!", "Cerrar");
+                label1.FontSize += 32;
+            };
         }
     }
 }

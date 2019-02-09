@@ -2,13 +2,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:HolaMundoMovil"
-             x:Class="HolaMundoMovil.MainPage">
+             x:Class="HolaMundoMovil.MainPage"
+             Title="Mi app">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Opcion 1" Order="Primary" />
+        <ToolbarItem Text="Opcion 2" Order="Secondary" />
+    </ContentPage.ToolbarItems>
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
+    <StackLayout VerticalOptions="Start">
+        <DatePicker />
+
+        <Switch IsToggled="True" />
+
+        <Button Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center" x:Name="button1" BackgroundColor="DarkBlue" TextColor="White" 
            VerticalOptions="CenterAndExpand" />
-    </StackLayout>
 
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Nombre:" VerticalOptions="Center" x:Name="label1"/>
+            <Entry Placeholder="Indique su nombre" />
+        </StackLayout>
+    </StackLayout>
 </ContentPage>
