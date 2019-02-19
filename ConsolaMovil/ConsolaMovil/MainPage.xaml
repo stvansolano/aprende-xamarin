@@ -4,11 +4,13 @@
              xmlns:local="clr-namespace:ConsolaMovil"
              x:Class="ConsolaMovil.MainPage">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="Black">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label x:Name="LabelSalida" 
+               FontSize="24" TextColor="White"
+               Text="Welcome to Xamarin.Forms!"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
     </StackLayout>
 
 </ContentPage>
