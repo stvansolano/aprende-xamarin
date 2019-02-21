@@ -1,26 +1,43 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:HolaMundoMovil"
              x:Class="HolaMundoMovil.MainPage"
              Title="Mi app">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Opcion 1" Order="Primary" />
-        <ToolbarItem Text="Opcion 2" Order="Secondary" />
-    </ContentPage.ToolbarItems>
-
-    <StackLayout VerticalOptions="Start">
-        <DatePicker />
-
-        <Switch IsToggled="True" />
-
-        <Button Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center" x:Name="button1" BackgroundColor="DarkBlue" TextColor="White" 
-           VerticalOptions="CenterAndExpand" />
-
-        <StackLayout Orientation="Horizontal">
-            <Label Text="Nombre:" VerticalOptions="Center" x:Name="label1"/>
-            <Entry Placeholder="Indique su nombre" />
-        </StackLayout>
+   <!--
+    
+    Controles en Xamarin.Forms
+    ==============
+    
+    <Label Text="Haga click" /> -->
+    
+   <!-- 
+     <Button
+     <Entry
+     <DatePicker
+    
+     <Button Text="Haga click"
+     <Entry Text="Haga click" 
+     <Entry Text="Haga click" Placeholder="Indique texto"
+     
+     <Label Text="Haga click" />
+     <DatePicker />
+    
+    Atributos + colores
+    
+    Uso de propiedades, colores
+    
+    StackLayout (contenedores)
+    
+    
+    Margin
+    -->
+    <StackLayout Margin="10" BackgroundColor="Silver">
+        
+        <Switch />
+        
+        <Label Text="Nombre:" />
+        <Button Text="Haga click" Margin="20"
+                BackgroundColor="Navy" TextColor="#ffffff" />
     </StackLayout>
 </ContentPage>
