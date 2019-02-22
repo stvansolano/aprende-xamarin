@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace ConsolaMovil
@@ -35,14 +31,25 @@ namespace ConsolaMovil
             salida += "Division: " + miFlotante;
             salida += "El salario es: " + salario;
             salida += miBooleano;
-
-            // Tarea: Presentar los Label en un StackLayout
-            new Label { Text = "Valor entero:" + miEntero };
-            new Label { Text = "Nombre:" + nombreCompleto};
-            // ....
-            new Label { Text = miBooleano.ToString() };
-
             LabelSalida.Text = salida;
+
+            Stack1.Children.Add(new Label { TextColor = Color.White, Text = "Valor entero:" + miEntero });
+            Stack1.Children.Add(new Label { TextColor = Color.White, Text = "Nombre:" + nombreCompleto});
+            Stack1.Children.Add(new Label { TextColor = Color.White, Text = "Concatenacion:" + concatenacion });
+            Stack1.Children.Add(new Label { TextColor = Color.White, Text = "Division:" + miFlotante });
+            Stack1.Children.Add(new Label { TextColor = Color.White, Text = "El salario es:" + salario});
+            Stack1.Children.Add(new Label { TextColor = Color.White, Text = "El booleano es:" + miBooleano.ToString() });
+
+            MostrarMensaje("Se ejecuto el metodo: MostrarMensaje");
+
+            Console.WriteLine("Cantidad de etiquetas: " + Stack1.Children.Count);
+        }
+
+        public void MostrarMensaje(string mensaje)
+        {
+            Console.WriteLine(mensaje);
+
+            Stack1.Children.Add(new Label { TextColor = Color.White, Text = mensaje});
         }
     }
 }
