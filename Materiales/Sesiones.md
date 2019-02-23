@@ -1,4 +1,4 @@
-# Curso de Xamarin
+# Desarrollo movil con Xamarin y C#
 
 ## Contacto
 Esteban Solano @stvansolano 
@@ -43,3 +43,10 @@ Instalacion de Xamarin
 * Tipos y variables
 * Ejercicios
 
+
+## Sesion 2 (remota)
+
+* Enums (Continuado)
+* Condicional `if`
+* Arreglos y matrices (Arrays)
+* Tareas
