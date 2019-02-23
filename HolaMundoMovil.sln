@@ -11,6 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolaMundoMovil", "HolaMundo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Materiales", "Materiales", "{0AEBDF97-4A48-4E70-AB50-6E692E66B6AD}"
 	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
 		Materiales\Sesiones.md = Materiales\Sesiones.md
 	EndProjectSection
 EndProject
@@ -33,6 +34,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolaMovil.iOS", "ConsolaMovil\ConsolaMovil.iOS\ConsolaMovil.iOS.csproj", "{873DDB9C-E60E-4252-B44A-6C10FE352B59}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hola-mundo", "hola-mundo", "{02C2D386-1650-4D15-AD8B-15EC36830ADD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Asignaciones", "Asignaciones", "{6879E4AA-E7A2-45CF-9C0A-89A9F1D32F34}"
+	ProjectSection(SolutionItems) = preProject
+		Asignaciones\tarea-01.md = Asignaciones\tarea-01.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tarea-01", "tarea-01", "{BCA77658-3268-42EC-B430-D7C6AA6B550B}"
+	ProjectSection(SolutionItems) = preProject
+		Asignaciones\tarea-01\README.md = Asignaciones\tarea-01\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -277,6 +288,7 @@ Global
 		{4E7B841F-EA4E-479E-AAB1-43D4E408F67B} = {E37694D5-BE3B-4C2A-A41D-9BA1560FA15D}
 		{873DDB9C-E60E-4252-B44A-6C10FE352B59} = {E37694D5-BE3B-4C2A-A41D-9BA1560FA15D}
 		{02C2D386-1650-4D15-AD8B-15EC36830ADD} = {0AEBDF97-4A48-4E70-AB50-6E692E66B6AD}
+		{BCA77658-3268-42EC-B430-D7C6AA6B550B} = {6879E4AA-E7A2-45CF-9C0A-89A9F1D32F34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {53447172-7711-462D-8E64-7E9109551C9D}
