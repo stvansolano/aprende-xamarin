@@ -51,5 +51,12 @@ namespace ConsolaMovil
 
             Stack1.Children.Add(new Label { TextColor = Color.White, Text = mensaje});
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            MostrarMensaje("La pantalla se ha mostrado");
+        }
     }
 }
