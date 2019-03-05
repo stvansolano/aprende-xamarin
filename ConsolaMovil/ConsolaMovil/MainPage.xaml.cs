@@ -23,14 +23,8 @@ namespace ConsolaMovil
 
             bool miBooleano = true;
 
-            string salida = "";
-
-            salida += "Valor entero:" + miEntero;
-            salida += "Nombre: " + nombreCompleto;
-            salida += "Concatenacion: " + concatenacion;
-            salida += "Division: " + miFlotante;
-            salida += "El salario es: " + salario;
-            salida += miBooleano;
+            string salida = "Consola de salida";
+            
             LabelSalida.Text = salida;
 
             Stack1.Children.Add(new Label { TextColor = Color.White, Text = "Valor entero:" + miEntero });
@@ -43,6 +37,19 @@ namespace ConsolaMovil
             MostrarMensaje("Se ejecuto el metodo: MostrarMensaje");
 
             Console.WriteLine("Cantidad de etiquetas: " + Stack1.Children.Count);
+
+            PickerPantalla.Items.Add("Pantalla 3");
+
+            PickerPantalla.SelectedIndexChanged += PickerPantalla_SelectedIndexChanged;
+        }
+
+        private void PickerPantalla_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Console.WriteLine("Usted escogio: " + PickerPantalla.SelectedItem);
+
+            MostrarMensaje("Usted escogio: " + PickerPantalla.SelectedItem);
+
+            Navigation.PushAsync(new MainPage());
         }
 
         public void MostrarMensaje(string mensaje)

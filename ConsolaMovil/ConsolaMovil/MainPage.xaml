@@ -3,13 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ConsolaMovil"
              x:Class="ConsolaMovil.MainPage">
+    <ScrollView Margin="20">
+        <StackLayout x:Name="Stack1" BackgroundColor="DarkGray">
 
-    <StackLayout x:Name="Stack1" BackgroundColor="Black">
-        <!-- Controles hijos van aca -->
-        <Label x:Name="LabelSalida" 
+            <Picker x:Name="PickerPantalla" 
+                TextColor="White" Title="Pantalla actual">
+                <Picker.Items>
+                    <x:String>Pantalla 1</x:String>
+                    <x:String>Pantalla 2</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Controles hijos van aca -->
+            <Label x:Name="LabelSalida" 
                FontSize="24" TextColor="White"
                Text="Welcome to Xamarin.Forms!"
                HorizontalOptions="Center"
                VerticalOptions="Start" />
-    </StackLayout>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
