@@ -49,7 +49,43 @@ namespace ConsolaMovil
 
             MostrarMensaje("Usted escogio: " + PickerPantalla.SelectedItem);
 
-            Navigation.PushAsync(new MainPage());
+            var pantalla1 = new Pantalla1();
+            var pantalla2 = new Pantalla2();
+            var pantalla3 = new Pantalla3();
+
+            // Problema: Navegar a cada pantalla segun la variable "PickerPantalla"
+
+            string pantallaEscogida = (string)PickerPantalla.SelectedItem;
+
+            // 1) Castear el SelectedItem que eligio el usuario 
+            // 2) If-else de la pantalla escogida
+            // 3) Mostrar con PushAsync de la pantalla
+
+            Page ejemplo = null;
+
+            if (pantallaEscogida == "Pantalla 1")
+                ejemplo = new Pantalla1();
+            else
+            if (pantallaEscogida == "Pantalla 2")
+                ejemplo = new Pantalla2();
+            else
+                ejemplo = new Pantalla3();
+
+            Navigation.PushAsync(ejemplo);
+
+            /* Opcional: switch-case
+            switch (pantallaEscogida)
+            {
+                case "Pantalla 1":
+                    ejemplo = new Pantalla1();
+                    break;
+                case "Pantalla 2":
+                    ejemplo = new Pantalla2();
+                    break;
+                default:
+                    ejemplo = new Pantalla3();
+                    break;
+            }*/
         }
 
         public void MostrarMensaje(string mensaje)
