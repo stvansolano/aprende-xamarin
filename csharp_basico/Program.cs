@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Net;
+using System.Net.Http;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace csharp_basico
 {
@@ -13,8 +17,50 @@ namespace csharp_basico
     {
         /*
             Punto de arranque del programa 
-        */ 
+        */
         public static void Main(string[] args)
+        {
+            ConsumoREST();
+
+            Console.ReadKey();
+        }
+
+        private static async void ConsumoREST()
+        {
+            // Mostrar el JSON y/o los productos de la API
+
+            using (var cliente = new HttpClient())
+            {
+                // 1) Hacer la peticion al servidor
+                cliente.BaseAddress = new Uri("http://cloud-services.azurewebsites.net/");
+
+
+
+                var respuesta = await cliente.GetAsync("api/Products");
+
+                Console.WriteLine("URL:" + cliente.BaseAddress + "/api/Products");
+                Console.WriteLine("------Headers---------------");
+                Console.WriteLine("Respuesta:" + respuesta.StatusCode.ToString());
+                Console.WriteLine(respuesta.Headers);
+
+                Console.WriteLine("-----Body--------");
+
+                // 2) Leer el contenido de la respuesta (peticion)
+                string json = await respuesta.Content.ReadAsStringAsync();
+
+                // 3) Interpretar (deserializar) el contenido JSON 
+                // Deserializar (JSON => {Objeto})
+                // Serializar ({Objeto} => String => JSON)
+
+                var deserializado = (JArray)JsonConvert.DeserializeObject(json);
+                Console.WriteLine(json);
+
+                Console.WriteLine("Cantidad de inventario");
+                Console.WriteLine(deserializado.Count);
+            }
+        }
+
+        private static void Parte1()
         {
             // declaracion de variables
             string miNombre = "John";
